@@ -191,7 +191,7 @@ img { display: block; max-width: 100%; }
 .hero__names {
   font-family: var(--script);
   font-weight: 400;
-  font-size: clamp(3rem, 8.5vw, 4.8rem);
+  font-size: clamp(2.3rem, 8.5vw, 4.8rem);
   line-height: 1;
   letter-spacing: 0.015em;
   color: var(--cream);
@@ -221,13 +221,14 @@ img { display: block; max-width: 100%; }
 .std__title {
   font-family: var(--serif);
   font-weight: 500;
-  font-size: clamp(1.9rem, 4.8vw, 2.8rem);
+  /* viewport-proportional so the date always fits, even on narrow phones */
+  font-size: clamp(1.4rem, 6.5vw, 2.6rem);
   letter-spacing: 0.02em;
   display: flex; align-items: center; justify-content: center;
   gap: 0.28em; flex-wrap: wrap;
 }
 .std__title .script {
-  font-size: 1.5em; color: var(--burgundy-soft); font-weight: 400;
+  font-size: 1.3em; color: var(--burgundy-soft); font-weight: 400;
   transform: translateY(0.08em);
 }
 .std__date {
@@ -580,6 +581,39 @@ img { display: block; max-width: 100%; }
   [data-reveal] { opacity: 1 !important; transform: none !important; }
   .scroll-cue i, .fab--music.playing i { animation: none !important; }
 }
+
+/* ==================== Mobile type scaling ==========================
+   The base type is enlarged (112.5%) for the wide desktop card. On phones
+   the card is full-width, so we step the root size down to keep text from
+   overflowing / breaking, and tighten the heavily-tracked uppercase labels. */
+@media (max-width: 768px) {
+  html { font-size: 100%; }
+}
+@media (max-width: 480px) {
+  html { font-size: 93.75%; } /* ~15px */
+  .kicker { letter-spacing: 0.26em; font-size: 0.66rem; }
+  .hero__pre { letter-spacing: 0.26em; }
+  .hero__tag { letter-spacing: 0.3em; }
+  .rsvp__names { letter-spacing: 0.22em; }
+  .detail-block h3 { letter-spacing: 0.18em; }
+  .footer__sub { letter-spacing: 0.22em; }
+
+  /* Save-the-date: keep the big date + lunar line inside the card */
+  .std__title { font-size: clamp(1.4rem, 6vw, 1.9rem); }
+  .std__title .script { font-size: 1.15em; }
+  .std__date { font-size: 0.66rem; letter-spacing: 0.1em; }
+
+  /* Map buttons: stack instead of overflowing side by side */
+  .map-links { flex-direction: column; align-items: center; }
+  .map-links a { width: 100%; max-width: 260px; justify-content: center; letter-spacing: 0.12em; }
+}
+@media (max-width: 360px) {
+  html { font-size: 87.5%; } /* ~14px */
+  .kicker { letter-spacing: 0.2em; }
+  .std__title .script { font-size: 1.05em; }
+}
+
+
 
 
 
