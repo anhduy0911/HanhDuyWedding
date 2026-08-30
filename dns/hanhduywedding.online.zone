@@ -1,32 +1,24 @@
 ; ============================================================================
 ; DNS zone file for hanhduywedding.online  →  GitHub Pages (user anhduy0911)
-; Import this at your domain's DNS provider ("Import zone file" / BIND format).
-; Most providers auto-manage SOA + NS records, so only the A/AAAA/CNAME below
-; matter. If your provider requires an SOA line, uncomment the block near the top.
+; Import this at your DNS provider (vCloudDNS: "Import zone" / BIND format).
+; Names are written fully-qualified (with trailing dot) for max compatibility,
+; since some panels don't accept the "@" shorthand for the root domain.
+; Most providers manage SOA + NS automatically, so only the records below matter.
 ; ============================================================================
 
-$ORIGIN hanhduywedding.online.
 $TTL 3600
 
-; --- Optional SOA (uncomment only if your provider needs one) ---------------
-; @   IN SOA ns1.example.com. admin.hanhduywedding.online. (
-;         2026083000 ; serial (YYYYMMDDnn)
-;         3600       ; refresh
-;         600        ; retry
-;         604800     ; expire
-;         3600 )     ; minimum TTL
+; --- Root / apex → GitHub Pages IPv4 (REQUIRED) ----------------------------
+hanhduywedding.online.      IN  A       185.199.108.153
+hanhduywedding.online.      IN  A       185.199.109.153
+hanhduywedding.online.      IN  A       185.199.110.153
+hanhduywedding.online.      IN  A       185.199.111.153
 
-; --- Apex (root) → GitHub Pages IPv4 ---------------------------------------
-@       IN  A       185.199.108.153
-@       IN  A       185.199.109.153
-@       IN  A       185.199.110.153
-@       IN  A       185.199.111.153
-
-; --- Apex (root) → GitHub Pages IPv6 (optional but recommended) -------------
-@       IN  AAAA    2606:50c0:8000::153
-@       IN  AAAA    2606:50c0:8001::153
-@       IN  AAAA    2606:50c0:8002::153
-@       IN  AAAA    2606:50c0:8003::153
+; --- Root / apex → GitHub Pages IPv6 (optional) ----------------------------
+hanhduywedding.online.      IN  AAAA    2606:50c0:8000::153
+hanhduywedding.online.      IN  AAAA    2606:50c0:8001::153
+hanhduywedding.online.      IN  AAAA    2606:50c0:8002::153
+hanhduywedding.online.      IN  AAAA    2606:50c0:8003::153
 
 ; --- www subdomain → your GitHub Pages site --------------------------------
-www     IN  CNAME   anhduy0911.github.io.
+www.hanhduywedding.online.  IN  CNAME   anhduy0911.github.io.
