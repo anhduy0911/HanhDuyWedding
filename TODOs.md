@@ -1,0 +1,6 @@
+I just pour in actual content to "vi" version, and these are my TODOs for you:
+- Some fonts are not friendly to Vietnamese - e.g. line 156-157 @docs/index.vi.html. Please find an alternative font that match the style but fully compatible with Vietnamese.
+- Change the countdown to match the actual countdown. Remember to use GMT+7 timezone, the date is 12.09.2026 8AM GMT+7.
+- For google map, please pin the Google Map to `https://maps.google.com/maps?vet=10CAAQoqAOahcKEwiInJ_NuseWAxUAAAAAHQAAAAAQGg..i&sca_esv=edf1f2ad1eb03cd1&pvq=Cg0vZy8xMWhiMXIxc2hiIhkKE0jhuqNvIFRow6BuaCBQYWxhY2UQAhgD&lqi=ChVI4bqjbyBUaMOgbmggUGFsYWNlIDJI6sPDm6ivgIAIWi8QABABEAIYABgBGAIiE2jhuqNvIHRow6BuaCBwYWxhY2UqCAgCEAAQARACMgJ2aZIBCnJlc3RhdXJhbnSaAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMnhDYkZVd1dtOVRSazV1VGxaSmVtUklTWFJOVjNCR1pETlZkRmRYWXhBQvoBBQjJARA6&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=vn&sa=X&ftid=0x314afe328640e1d5:0xc8ccabee76a2c1a7`
+- For line 97 @docs/index.vi.html, please hightlight `32 Hoàng Văn Thụ, Cẩm Phả` and `HẢO THÀNH PALACE 2, số 1 Võ Huy Tâm, Đường Thanh Niên, Cẩm Phả, Quảng Ninh` with `rgba(212, 189, 138, 0.6)`
+- Change the "en" version to replicate "vi" version.

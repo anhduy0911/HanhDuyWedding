@@ -1,0 +1,10 @@
+{
+  "name": "wedding-card",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A burgundy-themed online wedding invitation (static single-page site).",
+  "scripts": {
+    "start": "npx --yes serve docs -l 8000",
+    "dev": "python3 -m http.server 8000 --directory docs"
+  }
+}
