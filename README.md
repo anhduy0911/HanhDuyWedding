@@ -30,7 +30,7 @@ site is ready for **GitHub Pages**. One-time setup, then every update is a
 
 ```bash
 # from this folder
-git remote add origin https://github.com/<your-username>/<your-repo>.git
+git remote add origin git@github.com:anhduy0911/HanhDuyWedding.git
 git push -u origin main
 ```
 
@@ -52,10 +52,13 @@ At your domain registrar for **hanhduywedding.online**, add:
 | A | `@` | `185.199.109.153` |
 | A | `@` | `185.199.110.153` |
 | A | `@` | `185.199.111.153` |
-| CNAME | `www` | `<your-username>.github.io` |
+| CNAME | `www` | `anhduy0911.github.io` |
 
 (Optional IPv6 — add AAAA `@` records: `2606:50c0:8000::153`, `…8001::153`,
 `…8002::153`, `…8003::153`.)
+
+Or import **`dns/hanhduywedding.online.zone`** all at once if your provider
+supports zone-file import.
 
 DNS can take from minutes up to ~24h. GitHub then issues the HTTPS certificate
 automatically.
