@@ -57,7 +57,7 @@ body {
 body::before {
   content: "";
   position: fixed; inset: 0; z-index: -2;
-  background: url("../images/image1.JPG") center/cover no-repeat;
+  background: url("../images/landscape.jpg") center/cover no-repeat;
   filter: grayscale(0.5) sepia(0.28) brightness(0.92) blur(4px);
   transform: scale(1.08); /* hides the soft edges left by the blur */
 }
@@ -151,9 +151,9 @@ img { display: block; max-width: 100%; }
 }
 .hero__bg {
   position: absolute; inset: 0;
-  background: url("../images/image2.JPG") center/cover no-repeat;
-  opacity: 0.28;
-  filter: saturate(0.6);
+  background: url("../images/1st_cover.jpg") center/cover no-repeat;
+  opacity: 0.55;
+  filter: saturate(0.85);
   transform: scale(1.08);
   z-index: 0;
 }
