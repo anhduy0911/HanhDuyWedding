@@ -454,6 +454,20 @@ img { display: block; max-width: 100%; }
 }
 .map-links a:hover { background: var(--burgundy); color: var(--cream); border-color: var(--burgundy); }
 
+/* ============================ GIFT / QR ============================== */
+.gift { text-align: center; }
+.gift__text {
+  font-family: var(--serif-body); color: var(--on-cream-muted);
+  font-size: 1.1rem; line-height: 1.7; max-width: 44ch;
+  margin: 6px auto 28px;
+}
+.gift__qr {
+  width: 240px; max-width: 72%; margin: 0 auto;
+  padding: 12px; background: #fff;
+  border: 1px solid var(--cream-3);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
 /* ============================ FOOTER ================================= */
 .footer { text-align: center; padding: clamp(60px, 14vw, 100px) var(--pad); }
 .footer__thanks { font-family: var(--script); font-size: clamp(2rem, 5.5vw, 3rem); color: var(--gold-soft); line-height: 1; }
@@ -612,6 +626,7 @@ img { display: block; max-width: 100%; }
   .kicker { letter-spacing: 0.2em; }
   .std__title .script { font-size: 1.05em; }
 }
+
 
 
 
