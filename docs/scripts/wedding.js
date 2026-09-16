@@ -8,8 +8,8 @@
   /* ---- CONFIG: edit your wedding details here -------------------------- */
   var CONFIG = {
     // Ceremony date/time, fixed to GMT+7 so the countdown is correct for every
-    // viewer regardless of their device timezone. (12 Sep 2026, 08:00 GMT+7)
-    weddingDate: new Date("2026-09-12T08:00:00+07:00"),
+    // viewer regardless of their device timezone. (27 Sep 2026, 08:00 GMT+7)
+    weddingDate: new Date("2026-09-27T08:00:00+07:00"),
     // Where RSVP responses are sent (opens the guest's mail client)
     rsvpEmail: "vthh0403@gmail.com"
   };
